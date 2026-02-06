@@ -8,6 +8,9 @@ characters_with_spaces = len(text)
 # Number of words
 words = text.split()
 word_count = len(words)
+# Count sentences
+sentence_count = text.count('.') + text.count('!') + text.count('?')
+print("Sentences:", sentence_count)
 
 # Number of characters (without spaces)
 characters_without_spaces = len(text.replace(" ", ""))
